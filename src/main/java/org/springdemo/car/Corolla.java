@@ -4,11 +4,10 @@ import org.springdemo.carInterface.Car;
 import org.springdemo.carInterface.Engine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 
 
 //This class is use for all the function which abstracted from interface
-@Component("corolla")
+
 // This notation help to find functions t framework 
 public class Corolla implements Car {
 	
