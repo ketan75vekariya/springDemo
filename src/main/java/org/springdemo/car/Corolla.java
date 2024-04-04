@@ -13,7 +13,7 @@ public class Corolla implements Car {
 	
 	//Due to Autowired i don't need to create object of Engine Class and we can easily access data of engine class
 	@Autowired
-	@Qualifier("v6Engine")
+	@Qualifier("V8Engine")
 	//Qualifier access the class with the same name of give 
 	Engine engine;
 

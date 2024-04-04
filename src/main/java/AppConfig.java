@@ -3,8 +3,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springdemo.car.Swift;
-import org.springdemo.engine.V6;
-import org.springdemo.engine.V8;
+import org.springdemo.engine.EngineType;
 
 @Configuration
 @ComponentScan("org.springdemo")
@@ -22,12 +21,12 @@ public class AppConfig {
 	public Swift Swift() {
 		return new Swift();
 	}
-	@Bean("v6")
-	public V6 v6() {
-		return new V6();
+	@Bean("unknownEngine")
+	public EngineType type() {
+		return new EngineType();
 	}
-	@Bean("v8")
-	public V8 v8() {
-		return new V8();
+	@Bean("V8Engine")
+	public EngineType v8type() {
+		return new EngineType("V8 Engine type");
 	}
 }
